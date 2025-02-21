@@ -88,7 +88,6 @@ function ReachReport() {
 
     return (
         <div>
-            <Navbar />
             <div className={`report-page ${isActive ? 'active' : ''}`}>
                 <h1>{title}</h1>
                 <p>{content}</p>

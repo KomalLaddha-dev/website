@@ -12,7 +12,6 @@ const PrernaRegistration = () => {
 
   return (
     <div>
-      <Navbar />
     <div className={`registration-container ${boomEffect ? "boom-effect" : ""}`}>
       <h1 className="title">🎉 Welcome to PRERNA 17.0 🎉</h1>
       <p className="subtitle">Register now and be part of the excitement!</p>

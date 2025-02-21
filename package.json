@@ -9,8 +9,11 @@
     "@react-navigation/native": "^7.0.14",
     "@react-navigation/stack": "^7.1.1",
     "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
     "cra-template": "1.2.0",
+    "express": "^4.21.2",
     "ip": "^2.0.1",
+    "node-fetch": "^3.3.2",
     "npm": "^11.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -22,6 +25,8 @@
     "react-slick": "^0.30.3",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
@@ -29,6 +34,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -51,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.7",
     "gh-pages": "^6.3.0"
   }
 }

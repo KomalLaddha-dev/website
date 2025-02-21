@@ -113,7 +113,6 @@ const Teampage = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="team-container-heading">
         <h1>Welcome To The NSS Core Team</h1>
       </div>

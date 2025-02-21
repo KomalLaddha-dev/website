@@ -15,10 +15,23 @@ import SpecialActivities from './SpecialActivities.js';
 import EventReport from './EventReport.js';
 import AnnualReport from './AnnualReport.js';
 import DomainReport from './DomainReport.js';
+import HOL from './HOL.js';
+import Login from './Login.js';
+import Navbar from './Navbar.js';
+import {useState} from 'react';
+import Admin from './Admin.js';
+import HOLAdmin from './HOLADMIN.js';
 
 function App() {
+  const [teamName, setTeamName] = useState(null);
+
+  const handleLogin = (name) => {
+    setTeamName(name);
+  };
   return (
     <Router>
+      {/* Pass teamName, handleLogin, and handleLogout to Navbar */}
+      <Navbar teamName={teamName} onLogin={handleLogin}/>
       <Routes>
         <Route path="/" element={<NSSUnit />} />
         <Route path="/gallery" element={<Gallery />} />
@@ -34,6 +47,14 @@ function App() {
         <Route path="/domain/:labelreport" element={<DomainReport />} />
         <Route path="/domain/:labelreport/:year" />
         <Route path="/prerna-registration" element={<PrernaRegistration />} />
+        <Route
+            path="/HOL"
+            element={
+              teamName ? <HOL teamName={teamName} /> : <Login onLogin={handleLogin} />
+            }
+          />
+        <Route path="/HOLADMIN" element={<HOLAdmin isAdmin={true} />} />
+        <Route path="/Admin" element={<Admin />} />
       </Routes>
     </Router>
   );

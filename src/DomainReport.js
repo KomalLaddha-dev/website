@@ -159,7 +159,6 @@ function DomainReport() {
 
   return (
     <div>
-      <Navbar />
       <div className="events-container">
         <h2 className="events-title">{selectedCategory.title}</h2>
         <div className="events-list">

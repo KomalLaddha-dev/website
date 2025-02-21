@@ -70,7 +70,6 @@ const Gallery = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="gallery-container">
         <div className="gallery-title">
           <h2>Gallery</h2>

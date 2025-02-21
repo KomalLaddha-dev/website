@@ -242,7 +242,6 @@ const EventPage = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="event-page">
         <h2>{eventName.toUpperCase()} - {year}</h2>
         <div className="event-gallery">

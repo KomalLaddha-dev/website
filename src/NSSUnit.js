@@ -56,33 +56,6 @@ const NSSUnit = () => {
 
   return (
     <div className="nss-container">
-      {/* Navbar */}
-      <header className="nss-header">
-        <div className="nss-header-left">
-        <Link to="/">
-          <img src={UniversityLogo} alt="University Logo" className="nss-logo" />
-        </Link>
-          <h1 className="nss-title">RAMDEOBABA UNIVERSITY</h1>
-        </div>
-
-        {/* Menu Icon */}
-        <button className="nss-menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </button>
-
-        {/* Dropdown Menu */}
-        {menuOpen && (
-          <nav className={`nss-dropdown ${menuOpen ? "open" : ""}`}>
-            <ul>
-            <li><Link to="/">Home</Link></li>
-      <li><Link to="/events">Events</Link></li>
-      <li><Link to="/team">Team</Link></li>
-      <li><Link to="/gallery">Gallery</Link></li>
-            </ul>
-          </nav>
-        )}
-      </header>
-
       {/* Main Content */}
       <div className="nss-content">
         <div className="nss-details">

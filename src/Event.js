@@ -13,7 +13,6 @@ const Event = () => {
 
   return (
     <div>
-      <Navbar />
       <div className={`event-container ${boomEffect ? "boom-effect" : ""}`}>
         <h1 className="title">🎉 Welcome to NSS Events 🎉</h1>
         <p className="subtitle">Know more about events organised by NSS RBU</p>

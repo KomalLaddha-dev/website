@@ -125,7 +125,6 @@ function EventReport() {
 
   return (
     <div className="event-report-container">
-      <Navbar />
       <div className="content">
         <h1>Event Report for: {eventName}</h1>
 
