@@ -2,7 +2,7 @@ import "./HOL.css";
 import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("https://nssrbu.com");
+const socket = io("https://nssrbu-backend.vercel.app");
 
 export default function HOLADMIN({ isAdmin }) {
   const [leaderboard, setLeaderboard] = useState([]);

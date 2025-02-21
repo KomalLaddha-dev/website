@@ -28,7 +28,7 @@ export default function Admin() {
         console.log("Sending quiz data:", quizData);
 
         try {
-            const response = await fetch("https://nssrbu.com/add-quiz", {
+            const response = await fetch("https://nssrbu-backend.vercel.app/add-quiz", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(quizData),
@@ -56,13 +56,10 @@ export default function Admin() {
         }
 
         try {
-            const response = await fetch("https://nssrbu.com/set-quiz-start", {
+            const response = await fetch("https://nssrbu-backend.vercel.app/set-quiz-start", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-                },
-                body: JSON.stringify({ seconds: parseInt(timerSeconds, 10) }),
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ seconds: 10 }),
             });
             const data = await response.json();
             if (response.ok) {

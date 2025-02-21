@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import "./HOL.css"; // Import the CSS file
 
 // ✅ Use Live WebSocket URL
-const socket = io("https://nssrbu.com", { transports: ["websocket"] });
+const socket = io("https://nssrbu-backend.vercel.app", { transports: ["websocket"] });
 
 export default function HOL({ teamName, isAdmin }) {
   const [isStarted, setIsStarted] = useState(false);
@@ -29,7 +29,7 @@ export default function HOL({ teamName, isAdmin }) {
       setCountdown(null);
       try {
         // ✅ Fetch from Live Backend
-        const response = await fetch("https://nssrbu.com/quizzes");
+        const response = await fetch("https://nssrbu-backend.vercel.app/quizzes");
         const quizzes = await response.json();
         setTotalQuestions(quizzes.length);
       } catch (error) {
@@ -79,7 +79,7 @@ export default function HOL({ teamName, isAdmin }) {
 
   const startQuizAsAdmin = () => {
     if (isAdmin) {
-      fetch("https://nssrbu.com/set-quiz-start", {
+      fetch("https://nssrbu-backend.vercel.app/set-quiz-start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ seconds: 10 }), // ✅ Adjust Countdown Start Time
