@@ -15,8 +15,6 @@ import SpecialActivities from './SpecialActivities.js';
 import EventReport from './EventReport.js';
 import AnnualReport from './AnnualReport.js';
 import DomainReport from './DomainReport.js';
-import HOL from './HOL.js';
-import Login from './Login.js';
 import Navbar from './Navbar.js';
 
 function App() {
