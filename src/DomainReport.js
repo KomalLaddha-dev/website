@@ -55,9 +55,9 @@ function DomainReport() {
           {
             name: "Prayas",
             images: [
-              "/Clean/IMG_20241002_094126.jpg",
-      "/Clean/IMG_20241002_095147.jpg",
-      "/Clean/IMG_20241002_115904.jpg",
+              "https://github.com/himanshusalve16/website/blob/main/src/Images/Prayas1.jpg?raw=true",
+      "https://github.com/himanshusalve16/website/blob/main/src/Images/Prayas2.jpg?raw=true",
+      "https://github.com/himanshusalve16/website/blob/main/src/Images/Prayas3.jpg?raw=true",
             ],
             description1: "A showcase of innovative projects and research.",
             description2: "Students and professionals demonstrate their tech solutions.",
@@ -66,9 +66,9 @@ function DomainReport() {
           {
             name: "Socio Hackathon",
             images: [
-              "/Clean/IMG_20241002_094126.jpg",
-      "/Clean/IMG_20241002_095147.jpg",
-      "/Clean/IMG_20241002_115904.jpg",
+              "https://github.com/himanshusalve16/website/blob/main/src/Images/SocioHackathon1.jpg?raw=true",
+      "https://github.com/himanshusalve16/website/blob/main/src/Images/SocioHackathon2.jpg?raw=true",
+      "https://github.com/himanshusalve16/website/blob/main/src/Images/SocioHackathon3.jpg?raw=true",
             ],
             description1: "A showcase of innovative projects and research.",
             description2: "Students and professionals demonstrate their tech solutions.",
@@ -115,9 +115,9 @@ function DomainReport() {
           {
             name: "Rural Development Program",
             images: [
-              "/Clean/IMG_20241002_094126.jpg",
-      "/Clean/IMG_20241002_095147.jpg",
-      "/Clean/IMG_20241002_115904.jpg",
+              "https://media.istockphoto.com/id/1497811046/photo/a-doctor-and-her-assistant-doctor-engaged-in-a-conversation-with-family-members-of-a-village.jpg?s=612x612&w=0&k=20&c=tlxfJh1vYnm5PrnHvID4vdxnrqXmjpiinIxhgM5UrSY=",
+              "https://media.istockphoto.com/id/1125843699/photo/real-estate-agent-with-group-of-villagers.jpg?s=612x612&w=0&k=20&c=E0EpqKdr4v59EMB1hfevF1QcwELQk0dvekJyLfIrpq0=",
+              "https://media.istockphoto.com/id/1318617341/photo/low-angle-view-group-of-volunteers-busy-working-by-arranging-vegetables-and-clothes-on.jpg?s=612x612&w=0&k=20&c=CJsDJ1nIMKr5NPBQufc5eyjsbSV_3XhqgcQusavGXIk=",
             ],
             description1: "Programs aimed at empowering rural communities.",
             description2: "Workshops, training, and development projects in villages.",
@@ -159,6 +159,7 @@ function DomainReport() {
 
   return (
     <div>
+      <Navbar />
       <div className="events-container">
         <h2 className="events-title">{selectedCategory.title}</h2>
         <div className="events-list">
