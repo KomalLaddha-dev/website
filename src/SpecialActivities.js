@@ -36,7 +36,11 @@ function EventSlider({ images }) {
     <Slider {...settings} className="event-slider">
       {images.map((img, idx) => (
         <div key={idx}>
-          <img src={img} alt="event slide" className="event-slide-image" />
+          <img
+            src={img}
+            alt="event slide"
+            className="event-slide-image"
+          />
         </div>
       ))}
     </Slider>

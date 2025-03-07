@@ -1,4 +1,3 @@
-/* CSS Styles */
 .events-container {
   background-color: #ffffff;
   color: #000000;
@@ -37,17 +36,19 @@
   transform: scale(1.02);
 }
 
+/* Image Slider */
 .event-slider {
   width: 50%;
 }
 
 .event-slide-image {
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 300px; /* Fixed height for PC */
   border-radius: 1rem;
-  object-fit: cover;
+  object-fit: cover; /* Ensures images are properly fitted */
 }
 
+/* Event Details */
 .event-details {
   flex: 1;
   padding: 20px;
@@ -67,18 +68,10 @@
   line-height: 1.5;
 }
 
-.event-box.left {
-  flex-direction: row;
-}
-
-.event-box.right {
-  flex-direction: row-reverse;
-}
-
-/* Styling for the Event Report button */
+/* Event Report Button */
 .event-report-btn {
   padding: 10px 20px;
-  background-color: #ffae00; /* Button color */
+  background-color: #ffae00;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -86,88 +79,73 @@
   border-radius: 8px;
   cursor: pointer;
   margin-top: 20px;
-  text-decoration: none; /* Remove underline for links */
-  display: inline-block; /* Ensure the button behaves like a block element */
-  text-align: center; /* Center the text inside the button */
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .event-report-btn:hover {
-  background-color: #e59400;  /* Darker button color on hover */
-  transform: scale(1.05);  /* Slightly grow button on hover */
+  background-color: #e59400;
+  transform: scale(1.05);
 }
 
 .event-report-btn:active {
-  background-color: #d48100;  /* Darkest button color on click */
-  transform: scale(1);  /* Maintain size on click */
+  background-color: #d48100;
+  transform: scale(1);
 }
 
+/* 📌 Mobile View Fixes */
 @media (max-width: 768px) {
-  /* The parent container that holds both the gallery and description */
   .event-box {
-    /* Use grid to create a vertical stack layout */
     display: grid;
-    /* Create two rows: one for gallery, one for description */
     grid-template-rows: auto auto;
-    /* Add some space between the gallery and description */
     gap: 20px;
-    /* Ensure the container takes full width */
     width: 100%;
-    /* Prevent any overflow issues */
     overflow: hidden;
-    /* Ensure padding is included in width calculations */
     box-sizing: border-box;
   }
 
-  /* The image gallery/slider section */
   .event-slider {
-    /* Place in the first row */
-    grid-row: 1;
-    /* Take up full width of parent */
     width: 100%;
-    /* Prevent content from overflowing */
+    aspect-ratio: unset;
     overflow: hidden;
-    /* Maintain aspect ratio if needed */
-    aspect-ratio: 16/9;
   }
 
-  /* The container for the description section */
-  .event-details {
-    /* Place in the second row */
-    grid-row: 2;
-    /* Take up full width of parent */
+  .event-slide-image {
     width: 100%;
-    /* Add some padding around the content */
+    height: auto;
+    max-height: 250px;
+    object-fit: contain; /* Show full image without cropping */
+  }
+
+  .event-details {
+    grid-row: 2;
+    width: 100%;
     padding: 15px;
     color: white;
     border-radius: 10px;
-    /* Ensure padding doesn't affect width */
     box-sizing: border-box;
   }
 
-  /* The actual description text */
   .event-description {
-    /* Set comfortable reading size */
     font-size: 14px;
     line-height: 1.6;
-    /* Ensure text wraps properly */
     word-wrap: break-word;
-    /* Prevent text from overflowing */
     max-width: 100%;
   }
 }
 
+/* Fix for Slider Arrows */
 .event-slider .slick-prev,
 .event-slider .slick-next {
-    /* Position arrows on top of the images */
-    z-index: 1;
+  z-index: 1;
 }
 
 .event-slider .slick-prev {
-    /* Move the left arrow onto the image */
-    left: 20px;
+  left: 20px;
 }
 
 .event-slider .slick-next {
-    right: 20px;
+  right: 20px;
 }

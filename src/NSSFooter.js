@@ -38,7 +38,7 @@ const Footer = () => {
       <div className="footer-section">
         <h3>Contact Us</h3>
         <p>Email: <br></br><a href="mailto:nss@ramdeobaba.edu" className="mail">nss@rknec.edu</a></p>
-        <p>Ph: +91 9876543210</p>
+        <p>Ph: +91 9422213962</p>
         <p>Address: Ramdeobaba University, Nagpur</p>
       </div>
     </footer>

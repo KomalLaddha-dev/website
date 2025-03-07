@@ -23,7 +23,7 @@ const events = [
     images: [
       "https://github.com/himanshusalve16/website/blob/main/src/Images/YOGA1.jpg?raw=true",
       "https://github.com/himanshusalve16/website/blob/main/src/Images/YOGA2.jpg?raw=true",
-      "https://github.com/himanshusalve16/website/blob/main/src/Images/YOGA3.HEIC?raw=true",
+      "https://github.com/himanshusalve16/website/blob/main/src/Images/YOGA2.jpg?raw=true",
     ],
     description1: 'Promoting health and wellness through yoga sessions conducted by trained professionals.',
     description2: 'People of all ages join together to practice mindfulness and improve their physical well-being.',
@@ -53,7 +53,7 @@ const events = [
     images: [
       "https://github.com/himanshusalve16/website/blob/main/src/Images/YOGA1.jpg?raw=true",
       "https://github.com/himanshusalve16/website/blob/main/src/Images/YOGA2.jpg?raw=true",
-      "https://github.com/himanshusalve16/website/blob/main/src/Images/YOGA3.HEIC?raw=true",
+      "https://github.com/himanshusalve16/website/blob/main/src/Images/YOGA2.jpg?raw=true",
     ],
     description1: 'A fun-filled marathon promoting happiness, mental health awareness, and physical well-being.',
     description2: 'Participants engage in joyful activities, interactive sessions, and group runs.',
@@ -116,11 +116,10 @@ function EventSlider({ images }) {
       {images.map((img, idx) => (
         <div key={idx}>
           <img
-  src={img}
-  alt="event slide"
-  className="event-slide-image"
-  style={{ width: "100%", height: "300px", objectFit: "cover" }}
-/>
+            src={img}
+            alt="event slide"
+            className="event-slide-image"
+          />
         </div>
       ))}
     </Slider>

@@ -30,7 +30,7 @@ const teamMembers = {
         linkedin: "https://www.linkedin.com/in/archi-hundani-a19391247/" },
       { id: "exehead-3", name: "Kiran Rathi", role: "Executive Head", image: "https://github.com/himanshusalve16/website/blob/main/src/Kiran.jpg?raw=true" ,instagram: "https://www.instagram.com/kiran.0905?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
         linkedin: ""},
-      { id: "venuehead-1", name: "Pratik Chnadak", role: "Venue Head", image: "https://github.com/himanshusalve16/website/blob/main/src/Pratik.JPG?raw=true",instagram: "https://www.instagram.com/pratik_chandak_08/?utm_source=ig_web_button_share_sheet",
+      { id: "venuehead-1", name: "Pratik Chandak", role: "Venue Head", image: "https://github.com/himanshusalve16/website/blob/main/src/Pratik.JPG?raw=true",instagram: "https://www.instagram.com/pratik_chandak_08/?utm_source=ig_web_button_share_sheet",
         linkedin: "" },
       { id: "venuehead-2", name: "Devendra Mahajan", role: "Venue Head", image: "https://github.com/himanshusalve16/website/blob/main/src/Devendra.jpg?raw=true",instagram: "https://www.instagram.com/devendra_mahajan_/?utm_source=ig_web_button_share_sheet",
         linkedin: "https://www.linkedin.com/in/devendra-mahajan-24424321a/" },

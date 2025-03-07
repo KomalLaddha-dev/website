@@ -146,11 +146,10 @@ function DomainReport() {
         {images.map((img, idx) => (
           <div key={idx}>
             <img
-  src={img}
-  alt="event slide"
-  className="event-slide-image"
-  style={{ width: "100%", height: "300px", objectFit: "cover" }}
-/>
+            src={img}
+            alt="event slide"
+            className="event-slide-image"
+          />
           </div>
         ))}
       </Slider>
@@ -159,7 +158,6 @@ function DomainReport() {
 
   return (
     <div>
-      <Navbar />
       <div className="events-container">
         <h2 className="events-title">{selectedCategory.title}</h2>
         <div className="events-list">

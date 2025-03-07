@@ -27,7 +27,6 @@ function AnnualReport() {
 
   return (
     <div>
-      <Navbar />
       {/* Report Display */}
       <div className={`report-page ${isActive ? 'active' : ''}`}>
         <h1>🎉 Welcome to the Annual Report Section 🎉</h1>
