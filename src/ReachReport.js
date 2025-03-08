@@ -37,7 +37,6 @@ function ReachReport() {
     if (labelreport === 'volunteersreport' || labelreport === 'studentsengagedreport' || labelreport === 'happychildrenreport') {
         return (
             <div>
-                <Navbar />
                 <div className={`report-page ${isActive ? 'active' : ''}`}>
                     <h1>🎉 Welcome to the {labelreport.replace('report', '').toUpperCase()} Report Section 🎉</h1>
                     <p>Select the year to view the report:</p>

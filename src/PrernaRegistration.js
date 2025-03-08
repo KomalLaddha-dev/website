@@ -12,7 +12,7 @@ const PrernaRegistration = () => {
 
   return (
     <div>
-    <div className={`registration-container ${boomEffect ? "boom-effect" : ""}`}>
+    {/* <div className={`registration-container ${boomEffect ? "boom-effect" : ""}`}>
       <h1 className="title">🎉 Welcome to PRERNA 17.0 🎉</h1>
       <p className="subtitle">Register now and be part of the excitement!</p>
 
@@ -24,7 +24,8 @@ const PrernaRegistration = () => {
            Non-RBU Students
         </a>
       </div>
-    </div>
+    </div> */}
+    <h1>Coming Soon!</h1>
     <NSSFooter />
     </div>
   );
